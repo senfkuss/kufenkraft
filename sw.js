@@ -1,5 +1,5 @@
 // Hält die App offline verfügbar. Bei jeder Änderung an der App die Versionsnummer erhöhen.
-const CACHE = 'kufenkraft-4';
+const CACHE = 'kufenkraft-6';
 const FILES = ['./', 'index.html', 'styles.css', 'figures.js', 'data.js', 'app.js', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())));
